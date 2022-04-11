@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #FBFBFB;
+}
+
+button {
+    padding: 8px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #2a353e;
+}
+
+button:hover {
+    background-color: #2d3338;
+}
+
+input {
+    padding: 10px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid #747474;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.text1 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(234, 232, 232);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.text2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.text3 {
+    font-family: 'Roboto', sans-serif;
+    color: #595B56;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.text4 {
+    font-family: 'Roboto', sans-serif;
+    color: #9D9CAD;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #EBE8E8;
+    margin: 25px 25px;
+    max-width: 250px;
+    min-width: 200px;
+    height: fit-content;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.box div {
+    padding: 10%;
+}
+
+.box img {
+    max-width: 210px;
+    min-width: 210px;
+}
+
+.box:hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    z-index: 1;
+}
+
+header nav {
+    background-color: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(20, 20, 20, 0.727328431372549) 34%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding-top: 25px;
+}
+
+header nav div {
+    display: flex;
+    align-items: center;
+    padding-left: 10%
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 10%;
+}
+
+header nav ul a {
+    color: #848484 !important;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.hamburguerHeader {
+    display: none;
+    list-style: none;
+    padding-right: 10%;
+    right: 5%;
+}
+
+.headerInHamburguer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+.headerInHamburguer li a {
+    text-decoration: none;
+}
+
+@keyframes headerOpenAnimation {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes headerCloseAnimation {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-300px);
+    }
+}
+
+@keyframes headerRedimensionarAnimation {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-400px);
+    }
+}
+
+/* Main */
+
+main {
+    background-image: url(../Images/CameraDeputados.png);
+    Background-position: center;
+    Background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main div {
+    text-align: center;
+}
+
+.MainTextCenterMain {
+    position: relative;
+    width: 47rem;
+    height: 1rem;
+}
+
+.MainTextDecoratey1 {
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    color: #2a353e;
+}
+
+.MainTextDecoratey2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(234, 232, 232);
+}
+
+.MainTextSecond {
+    position: relative;
+    width: 26rem;
+    top: 50px;
+}
+
+.MainButton {
+    margin-top: 140px;
+    width: 250px;
+}
+
+/* Section = Deputados */
+
+#deputado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#deputado h2 {
+    margin-top: 100px;
+    color: #2d3338;
+}
+
+#deputado h1 {
+    margin-top: 20px;
+}
+
+#deputado input {
+    width: 320px;
+    margin-top: 50px;
+}
+
+#deputado button {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.containerBox {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+.containerBox h1 {
+    margin: 15px 0px;
+}
+
+.containerBox ul {
+    list-style: circle;
+    text-decoration: none;
+}
+
+.containerBox li {
+    margin: 15px 10%;
+    position: relative;
+}
+
+.containerBox li a {
+    color: #595B56;
+}
+
+.containerBox .textElevate {
+    font-size: 9px;
+    position: absolute;
+    top: 12px
+}
+
+.containerBox .containerIcon {
+    text-align: center;
+}
+
+/* Section = Partidos */
+
+#partidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#partidos h2 {
+    margin-top: 100px;
+    color: #2d3338;
+    margin-bottom: 15px;
+}
+
+#partidos h1 {
+    margin-top: 20px;
+}
+
+#partidos input {
+    width: 345px;
+    margin-top: 50px;
+}
+
+#partidos button {
+    width: 400px;
+    margin-top: 10px;
+}
+
+/* Section = Noticias */
+
+#noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#noticias h1 {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    color: #2d3338;
+}
+
+#noticias .containerNoticias {
+    display: flex;
+}
+
+.containerNoticias {
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.noticiaBox {
+    width: 50%;
+    text-align: center;
+}
+
+.noticiaBox h2 {
+    margin-bottom: 30px;
+}
+
+.noticiaBox p {
+    margin-bottom: 15px;
+    font-weight: circle;
+}
+
+.containerNoticias img {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    border-radius: 15px;
+}
+
+.containerNoticias img:hover {
+    -webkit-transform: scale(0.5);
+    transform: scale(1.1);
+}
+
+/* Section = Eventos */
+
+#eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+#eventos h1 {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    color: #2d3338;
+}
+
+#eventos h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.containerEventos {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.containerEventos div {
+    width: 80%;
+    margin: 20px;
+}
+
+.containerEventos input {
+    width: 20%;
+    margin: 0px 5px;
+}
+
+.containerEventos button {
+    width: 20%;
+}
+
+.containerInformacoesEventos {
+    display: flex;
+    margin: 20px;
+}
+
+.containerDateEventos {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right: 2px solid #2a353e;
+    margin-right: 5px;
+}
+
+.containerInfoEventos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.eventosButton {
+    width: 400px;
+    color: #fff;
+}
+
+/* Section = contato */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato h1 {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    color: #2d3338;
+}
+
+.containerContato {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.containerFormulario {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0px 5%;
+}
+
+.containerFormulario input {
+    margin: 10px 0px;
+}
+
+.containerFaleConosco {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0px 5%;
+}
+
+.containerFaleConosco p {
+    margin: 10px 0px;
+}
+
+.textArea {
+    height: 100px;
+}
+
+/* Footer */
+footer div {
+    width: 100%;
+    background-color: #2d3338;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 1200px) {
+    header {
+        position: absolute;
+        z-index: 1;
+    }
+
+    header nav {
+        background-color: #2a353e;
+        padding: 10px 0px;
+    }
+
+    .text1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .text3 {
+        font-size: 15px
+    }
+
+    .text4 {
+        font-size: 11px
+    }
+
+    .navHeader {
+        display: none;
+    }
+
+    .hamburguerHeader {
+        display: flex;
+    }
+
+    .MainTextCenterMain {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .MainTextDecoratey2 {
+        text-align: center;
+        position: relative;
+    }
+
+    .MainTextDecoratey1 {
+        display: none;
+    }
+
+    .MainTextSecond {
+        display: flex;
+        flex-direction: column;
+        height: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #deputado h1 {
+        text-align: center;
+    }
+
+    #deputado input {
+        width: 80%;
+    }
+
+    #deputado button {
+        width: 80% !important
+    }
+
+    #noticias .containerNoticias {
+        flex-direction: column;
+    }
+
+    .noticiaBox {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .containerEventos {
+        width: 80%;
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerEventos div {
+        width: 80%;
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .containerEventos input {
+        width: 20%;
+        max-width: 200px;
+        min-width: 150px;
+        margin: 10px;
+    }
+
+    .eventos {
+        flex-wrap: nowrap !important;
+    }
+
+    .containerDateEventos {
+        margin: 5px !important;
+    }
+
+    .containerInfoEventos {
+        margin: 5px !important;
+    }
+
+    .containerContato {
+        display: flex;
+        width: 80%;
+        margin-bottom: 30px;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .containerFormulario {
+        width: 100%;
+    }
+
+    .containerFaleConosco {
+        width: 100%;
+    }
+}
